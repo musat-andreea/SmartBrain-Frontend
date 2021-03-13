@@ -68,7 +68,7 @@ const particleOptions = {
 
 /*
    componentDidMount() {
-     fetch('http://localhost:3000/')
+     fetch('https://smartbrain-api-medeea.herokuapp.com/')
          .then(response => response.json())
          .then(console.log) // data => console.log(data)
    }
@@ -100,7 +100,7 @@ const particleOptions = {
    onButtonSubmit = () => {
      //console.log('click');
      this.setState({imageUrl: this.state.input});
-     fetch('http://localhost:3000/imageurl', {
+     fetch('https://smartbrain-api-medeea.herokuapp.com/imageurl', {
        method: 'post',
        headers: {'Content-Type': 'application/json'},
        body: JSON.stringify({
@@ -120,7 +120,7 @@ const particleOptions = {
            //console.log(response.outputs[0].data.regions[0].region_info.bounding_box);
          .then(response => {
            if(response) {
-             fetch('http://localhost:3000/image', {
+             fetch('https://smartbrain-api-medeea.herokuapp.com/image', {
                method: 'put',
                headers: {'Content-Type': 'application/json'},
                body: JSON.stringify({

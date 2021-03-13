@@ -22,7 +22,7 @@ class SignIn extends React.Component {
   onSubmitSignIn = () => {
     //console.log(this.state);
     // SEND TO THE BACKEND
-    fetch('http://localhost:3000/signin', {
+    fetch('https://smartbrain-api-medeea.herokuapp.com/signin', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
